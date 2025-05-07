@@ -66,4 +66,12 @@ newTable = [
     newTable.splice(1,0,arrB)
     console.log(newTable);
 
+        let avgAge = 0;
+        let sum = 0;
+        for(let i=0; i< newTable.length; i++){
+            sum = sum + parseInt(newTable[i].age) // parseint converst a string into a integer. 
+    }
+    avgAge = sum/newTable.length; 
+    console.log(avgAge)
+
 
