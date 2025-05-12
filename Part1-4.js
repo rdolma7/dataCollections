@@ -7,7 +7,7 @@ let row = []
 
 for (let i = 0; i < csv.length; i++) {
 	let char = csv[i] 
-	// console.log(char)
+	console.log(char)
 
 	if (char !== ',' && char !== '\n') {
 		cell = cell + char
@@ -25,7 +25,7 @@ for (let i = 0; i < csv.length; i++) {
 		row = []
 	}
 }
-// console.log(table);
+console.log(table);
 
 //Part3
 table = [
@@ -48,7 +48,7 @@ for (let i = 1; i < table.length; i++){
    };
    newTable.push(obj);   
 }
-// console.log(newTable);
+console.log(newTable);
 
 //Part 4
 newTable = [
@@ -74,4 +74,10 @@ newTable = [
     avgAge = sum/newTable.length; 
     console.log(avgAge)
 
+    // part 5
+    let newChar = ""
+    for(let i=0; i < newTable.length; i++){
+        newChar += newTable[i].id + "," + newTable[i].name + "," + newTable[i].occupation+ "," + newTable[i].age
+    }
+    console.log(newChar)
 
